@@ -8,7 +8,7 @@ namespace Box
 {
     public enum Color
     {
-        White,
-        Black
+        White = 0,
+        Black = 1,
     }
 }

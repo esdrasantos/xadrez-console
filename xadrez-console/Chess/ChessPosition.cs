@@ -6,7 +6,7 @@
     {
         public const int RowOffset = 8;
 
-        public const char ColumnOffset = 'A';
+        public const char ColumnOffset = 'a';
 
         public char Column { get; set; }
 

@@ -13,7 +13,6 @@ namespace xadrez_console
 
         public King(Board board, Color color) : base (board, color)
         {
-
         }
 
         public override string ToString()
