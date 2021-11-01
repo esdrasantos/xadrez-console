@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tabuleiro;
+using Box;
 
 namespace xadrez_console
 {
@@ -17,20 +17,23 @@ namespace xadrez_console
             {
                 for (int column = 0; column < board.NumberOfColumns; column++)
                 {
-                    Piece piece = board.GetPiece(row, column);
+                    Position pos = new Position(row, column);
+                    Piece piece = board.GetPiece(pos);
 
                     if (piece == null)
                     {
-                        Console.WriteLine(EmptyPosition);
+                        Console.Write(EmptyPosition);
                     }
                     else
                     {
-                        Console.WriteLine(piece);
-                    }
-
-                    Console.WriteLine();
+                        Console.Write(piece);
+                    }  
                 }
+
+                Console.WriteLine();
             }
+
+            Console.WriteLine();
         }
     }
 }

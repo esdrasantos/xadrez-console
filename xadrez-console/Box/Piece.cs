@@ -1,4 +1,4 @@
-﻿namespace Tabuleiro
+﻿namespace Box
 {
     public class Piece
     {
@@ -12,9 +12,9 @@
 
         public const int MovesCountDefault = 0;
 
-        public Piece (Position pos, Color color, Board board)
+        public Piece (Board board, Color color)
         {
-            this.Position = pos;
+            this.Position = null;
             this.Color = Color;
             this.Board = board;
 

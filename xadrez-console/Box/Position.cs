@@ -1,4 +1,4 @@
-﻿namespace Tabuleiro
+﻿namespace Box
 {
     public class Position
     {
