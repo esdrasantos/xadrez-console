@@ -43,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chess\ChessPosition.cs" />
+    <Compile Include="Chess\ChessPositionException.cs" />
+    <Compile Include="Chess\Pieces\King.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screen.cs" />
+    <Compile Include="Box\Board.cs" />
+    <Compile Include="Box\BoardException.cs" />
+    <Compile Include="Box\Color.cs" />
+    <Compile Include="Box\Piece.cs" />
+    <Compile Include="Box\Position.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
